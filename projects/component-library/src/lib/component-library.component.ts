@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-component-library',
@@ -13,6 +13,9 @@ import { Component, OnInit } from '@angular/core';
 export class ComponentLibraryComponent implements OnInit {
 
   constructor() { }
+
+  @Input()
+  hello: string = '';
 
   ngOnInit(): void {
   }

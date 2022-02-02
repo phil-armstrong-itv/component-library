@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/component-library",
       "sourceRoot": "projects/component-library/src",
-      "prefix": "lib",
+      "prefix": "cl",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -30,6 +30,20 @@
             "main": "projects/component-library/src/test.ts",
             "tsConfig": "projects/component-library/tsconfig.spec.json",
             "karmaConfig": "projects/component-library/karma.conf.js"
+          }
+        }
+      }
+    },
+    "storybook": {
+      "projectType": "application",
+      "root": "stories",
+      "sourceRoot": "stories",
+      "architect": {
+        "build": {
+          "options": {
+            "tsConfig": "tsconfig.json",
+            "styles": [],
+            "scripts": []
           }
         }
       }
