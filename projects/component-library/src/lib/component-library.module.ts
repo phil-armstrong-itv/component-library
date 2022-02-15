@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
-import { ComponentLibraryComponent } from './component-library.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 
 
 @NgModule({
   declarations: [
-    ComponentLibraryComponent
+    PaginationComponent
   ],
   imports: [
   ],
   exports: [
-    ComponentLibraryComponent
+
   ]
 })
 export class ComponentLibraryModule { }

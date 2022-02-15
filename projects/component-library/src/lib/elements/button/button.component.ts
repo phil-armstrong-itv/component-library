@@ -1,9 +1,10 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'cl-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  styleUrls: ['./button.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ButtonComponent {
    /**
@@ -12,7 +13,10 @@ export class ButtonComponent {
     * @required
     */
    @Input()
-   label = 'Button';
+   label: string;
+
+   @Input()
+   disabled: boolean = false;
  
    /**
     * Optional click handler
